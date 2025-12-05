@@ -197,7 +197,7 @@ int main() {
                         getline(cin, chosenSlot);
 
                         if (!d->getSchedule().bookSlot(chosenSlot)) {
-                            cout << "❌ Slot already booked or invalid!\n";
+                            cout << " Slot already booked or invalid!\n";
                         }
                         else {
                             Appointment* a = new Appointment(connectedPatient, d, chosenSlot);
@@ -228,3 +228,4 @@ int main() {
 
     return 0;
 }
+
